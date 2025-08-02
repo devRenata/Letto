@@ -1,16 +1,15 @@
-# app
+# Letto
 
-A new Flutter project.
+Aplicativo mobile focado em simplificar a busca por quartos para alugar e facilitar o compartilhamento de moradias entre pessoas com perfis compatíveis.
 
-## Getting Started
+## 📱 Sobre o Projeto
 
-This project is a starting point for a Flutter application.
+O Letto é uma plataforma que conecta pessoas interessadas em compartilhar aluguel. Pensando em atender quem precisa se mudar com agilidade - como profissionais em início ou transição de carreira e universitários - o app oferece um ambiente seguro para cadastrar moradias, criar perfis completos, aplicar filtros personalizados e enviar propostas de convivência com base em interesses e estilo de vida.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 💻 Tecnologias Utilizadas
+- Flutter - UI nativa multiplataforma
+- Firebase Auth - autenticação segura
+- Cloud Firestore - bando de dados em tempo real
+- Firebase Storage - upload de documentos e imagens
+- Bloc - gerenciamento de estado
+- Clean Architecture e DDD - organização escalável de código
