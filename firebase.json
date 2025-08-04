@@ -1,0 +1,23 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "letto-78250",
+                    "appId": "1:741509796231:android:86e9535fb1dcf1a3a4c322",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "letto-78250",
+                    "configurations": {
+                        "android": "1:741509796231:android:86e9535fb1dcf1a3a4c322",
+                        "ios": "1:741509796231:ios:b1753b7e25cf0319a4c322",
+                        "web": "1:741509796231:web:b757c2adcb06bd9ca4c322"
+                    }
+                }
+            }
+        }
+    }
+}

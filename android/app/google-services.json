@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "741509796231",
+    "project_id": "letto-78250",
+    "storage_bucket": "letto-78250.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741509796231:android:86e9535fb1dcf1a3a4c322",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk6CrJtXoAh-il0RcMvVhaNaD_hn-RIEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
