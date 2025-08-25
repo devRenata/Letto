@@ -27,20 +27,17 @@ class AuthRepositoryImp implements IAuthRepository {
   }
 
   @override
-  Future<Map<String, dynamic>> getUser({required String id}) {
-    // TODO: implement getUser
-    throw UnimplementedError();
-  }
-
-  @override
-  Future<void> login({required String email, required String password}) {
-    // TODO: implement login
-    throw UnimplementedError();
-  }
-
-  @override
-  Future<void> logout() {
-    // TODO: implement logout
-    throw UnimplementedError();
+  Future<void> signInWithEmailAndPassword({
+    required String email,
+    required String password,
+  }) async {
+    try {
+      await firebaseAuth.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+    } catch (e) {
+      throw authExceptionHandler.handle(e as Exception);
+    }
   }
 }

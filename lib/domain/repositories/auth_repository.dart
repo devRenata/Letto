@@ -3,11 +3,9 @@ abstract interface class IAuthRepository {
     required String email,
     required String password,
   });
-  
-  Future<void> login({
+
+  Future<void> signInWithEmailAndPassword({
     required String email,
     required String password,
   });
-  Future<Map<String, dynamic>> getUser({required String id});
-  Future<void> logout();
 }

@@ -52,6 +52,26 @@ class AuthExceptionHandlerImp implements IAuthExceptionHandler {
           message: 'Sem conexão com a internet.',
           code: 'network-request-failed',
         );
+      case 'user-disabled':
+        return AuthException(
+          message: 'Usuário desabilitado, tente com outro login.',
+          code: 'user-disabled',
+        );
+      case 'user-not-found':
+        return AuthException(
+          message: 'Usuário não encontrado, tente novamente.',
+          code: 'user-not-found',
+        );
+      case 'wrong-password':
+        return AuthException(
+          message: 'Senha incorreta.',
+          code: 'wrong-password',
+        );
+      case 'invalid-credential':
+        return AuthException(
+          message: 'Email ou senha inválido.',
+          code: 'invalid-credential',
+        );
       default:
         return AuthException(
         message: 'Erro de autenticação desconhecido.',
