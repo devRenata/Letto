@@ -98,4 +98,48 @@ void main() {
     expect(result, isA<AuthException>());
     expect(result.code, equals('unknown-error'));
   });
+
+  test("Should map user-disabled to AuthException correctly", () {
+    final exception = FirebaseAuthException(
+      code: 'user-disabled',
+    );
+
+    final result = handler.handle(exception);
+    
+    expect(result, isA<AuthException>());
+    expect(result.code, equals('user-disabled'));
+  });
+
+  test("Should map user-not-found to AuthException correctly", () {
+    final exception = FirebaseAuthException(
+      code: 'user-not-found',
+    );
+
+    final result = handler.handle(exception);
+    
+    expect(result, isA<AuthException>());
+    expect(result.code, equals('user-not-found'));
+  });
+
+  test("Should map wrong-password to AuthException correctly", () {
+    final exception = FirebaseAuthException(
+      code: 'wrong-password',
+    );
+
+    final result = handler.handle(exception);
+    
+    expect(result, isA<AuthException>());
+    expect(result.code, equals('wrong-password'));
+  });
+
+  test("Should map invalid-credential to AuthException correctly", () {
+    final exception = FirebaseAuthException(
+      code: 'invalid-credential',
+    );
+
+    final result = handler.handle(exception);
+    
+    expect(result, isA<AuthException>());
+    expect(result.code, equals('invalid-credential'));
+  });
 }
