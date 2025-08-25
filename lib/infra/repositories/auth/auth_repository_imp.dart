@@ -21,10 +21,8 @@ class AuthRepositoryImp implements IAuthRepository {
         email: email,
         password: password,
       );
-    } on FirebaseAuthException catch (e) {
-      throw authExceptionHandler.handle(e);
     } catch (e) {
-      
+      throw authExceptionHandler.handle(e as Exception);
     }
   }
 
